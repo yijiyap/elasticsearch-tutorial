@@ -38,3 +38,5 @@ class Search:
 
     def search(self, **query_args):
         return self.es.search(index='my_documents', **query_args)
+
+    
