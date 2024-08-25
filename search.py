@@ -35,3 +35,6 @@ class Search:
         with open('data.json', 'rt') as f:
             documents = json.loads(f.read())
         return self.insert_documents(documents)
+
+    def search(self, **query_args):
+        return self.es.search(index='my_documents', **query_args)
