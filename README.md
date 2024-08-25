@@ -26,3 +26,9 @@ docker run -p 127.0.0.1:9200:9200 -d --name elasticsearch \
   -v "elasticsearch-data:/usr/share/elasticsearch/data" \
   docker.elastic.co/elasticsearch/elasticsearch:8.15.0
 ```
+
+4. Populate the Elasticsearch index
+```
+flask reindex
+```
+
